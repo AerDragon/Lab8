@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login">
+   <children>
+      <VBox fx:id="vbLogin" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="675.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Authorization">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fldLogin" maxWidth="250.0" prefWidth="100.0" promptText="Enter your login" />
+            <PasswordField fx:id="fldPassword" maxWidth="250.0" promptText="Enter your password" />
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" text="Login" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets right="12.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="4.0" left="40.0" right="40.0" top="4.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnRegister" mnemonicParsing="false" text="Register">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="4.0" left="35.0" right="35.0" top="4.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <Label text="Use social media">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnVK" mnemonicParsing="false" prefHeight="46.0" prefWidth="238.0">
+               <padding>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@VK.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnOK" mnemonicParsing="false" prefHeight="48.0" prefWidth="278.0">
+               <padding>
+                  <Insets bottom="5.0" left="22.0" right="22.0" top="5.0" />
+               </padding>
+               <graphic>
+                  <ImageView  fitHeight="38.0" fitWidth="200.0">
+                     <image>
+                        <Image url="@OK.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

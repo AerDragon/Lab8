@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="617.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Visualise">
+   <children>
+      <BorderPane layoutX="-408.0" layoutY="46.0" prefHeight="384.0" prefWidth="466.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <ToolBar prefHeight="42.0" prefWidth="688.0" BorderPane.alignment="CENTER">
+              <items>
+                <Button fx:id="btnBack" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Back" />
+              </items>
+            </ToolBar>
+         </top>
+         <center>
+            <Canvas fx:id="canvas" height="574.0" width="735.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
